@@ -1,0 +1,9 @@
+from datetime import datetime
+date_input = input("Enter a date (YYYY-MM-DD): ")
+date_obj = datetime.strptime(date_input, "%Y-%m-%d")
+day_of_week = date_obj.strftime("%A")
+print(f"The day of the week is: {day_of_week}")
+
+OUTPUT:
+Enter a date (YYYY-MM-DD): 2024-08-07
+The day of the week is: Wednesday
