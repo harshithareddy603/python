@@ -1,0 +1,24 @@
+import math
+number = 3
+
+square_decimal = number ** 2
+cube_decimal = number ** 3
+square_integer = int(square_decimal)
+cube_integer = int(cube_decimal)
+square_root_decimal = math.sqrt(number)
+square_root_integer = int(square_root_decimal)
+
+print(f"Square of {number} (Decimal): {square_decimal}")
+print(f"Square of {number} (Integer): {square_integer}")
+print(f"Cube of {number} (Decimal): {cube_decimal}")
+print(f"Cube of {number} (Integer): {cube_integer}")
+print(f"Square Root of {number} (Decimal): {square_root_decimal}")
+print(f"Square Root of {number} (Integer): {square_root_integer}")
+
+OUTPUT:
+Square of 3 (Decimal): 9
+Square of 3 (Integer): 9
+Cube of 3 (Decimal): 27
+Cube of 3 (Integer): 27
+Square Root of 3 (Decimal): 1.7320508075688772
+Square Root of 3 (Integer): 1
