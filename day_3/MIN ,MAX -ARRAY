@@ -1,0 +1,10 @@
+arr = [5, 2, 9, 10, 17]
+min_val = min(arr)
+max_val = max(arr)
+
+print(f'Minimum value: {min_val}')
+print(f'Maximum value: {max_val}')
+
+OUTPUT:
+Minimum value: 2
+Maximum value: 17
