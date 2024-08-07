@@ -1,0 +1,7 @@
+my_array = [1, 2, 3, 4, 5]
+
+my_array.insert(3, 10)
+print(my_array) 
+
+OUTPUT:
+[1, 2, 3, 10, 4, 5]
