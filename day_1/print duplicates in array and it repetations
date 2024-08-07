@@ -1,0 +1,9 @@
+from collections import Counter
+def print_duplicates(arr):
+    count = Counter(arr)
+    for item, freq in count.items():
+        if freq > 1:
+            print(f"{item}: {freq}")
+
+array = [1, 2, 3, 2, 4, 5, 3, 5, 5]
+print_duplicates(array)
