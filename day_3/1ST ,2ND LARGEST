@@ -1,0 +1,14 @@
+def find_largest_elements(input_list):
+    sorted_list = sorted(input_list, reverse=True)
+    first_largest = sorted_list[0]
+    second_largest = sorted_list[1]
+    return first_largest, second_largest
+
+my_list = [10, 5, 20, 8, 15]
+largest, second_largest = find_largest_elements(my_list)
+print("First Largest Element:", largest)
+print("Second Largest Element:", second_largest)
+
+OUTPUT:
+First Largest Element: 20
+Second Largest Element: 15
