@@ -1,0 +1,12 @@
+def length_of_last_word(sentence):
+    words = sentence.split()
+    if len(words) == 0:
+        return 0
+    return len(words[-1])
+
+sentence = "Hello World"
+length = length_of_last_word(sentence)
+print(f"The length of the last word in the sentence '{sentence}' is: {length}")
+
+OUTPUT:
+The length of the last word in the sentence 'Hello World' is: 5
