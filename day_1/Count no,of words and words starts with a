@@ -1,0 +1,19 @@
+sentence = "This is a sample sentence for demonstration purposes"
+words = sentence.split()
+
+uppercase_sentence = sentence.upper()
+lowercase_sentence = sentence.lower()
+
+total_words = len(words)
+
+words_starting_with_a = sum(1 for word in words if word.lower().startswith('a'))
+print("Uppercase Sentence:", uppercase_sentence)
+print("Lowercase Sentence:", lowercase_sentence)
+print("Total Number of Words:", total_words)
+print("Words Starting with 'a':", words_starting_with_a)
+
+OUTPUT:
+Uppercase Sentence: THIS IS A SAMPLE SENTENCE FOR DEMONSTRATION PURPOSES
+Lowercase Sentence: this is a sample sentence for demonstration purposes
+Total Number of Words: 8
+Words Starting with 'a': 1
