@@ -1,0 +1,13 @@
+def find_significant_digits(number):
+    number_str = str(number)
+    most_significant_digit = number_str[0]
+    least_significant_digit = number_str[-1]
+    return most_significant_digit, least_significant_digit
+number = 123456
+most, least = find_significant_digits(number)
+print("Most significant digit:", most)
+print("Least significant digit:", least)
+
+  OUTPUT:
+Most significant digit: 1
+Least significant digit: 6
