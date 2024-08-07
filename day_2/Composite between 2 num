@@ -1,0 +1,17 @@
+def is_composite(n):
+    if n < 4:   
+        return False
+    for i in range(2, int(n**0.5) + 1):   
+        if n % i == 0:
+            return True
+    return False
+
+def find_composites(start, end):
+    return [n for n in range(start, end + 1) if is_composite(n)]
+ 
+start = 10
+end = 20
+print(find_composites(start, end))
+
+OUTPUT:
+[10, 12, 14, 15, 16, 18, 20]
