@@ -1,0 +1,7 @@
+sentence = "hello world how are you"
+capitalized_words = [word.capitalize() for word in sentence.split()]
+result = ' '.join([word[0] + '.' for word in capitalized_words])
+print(result)
+
+OUTPUT:
+H. W. H. A. Y.
