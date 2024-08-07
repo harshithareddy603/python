@@ -1,0 +1,25 @@
+def count_primes_composites(start, end):
+    primes = 0
+    composites = 0
+
+    for num in range(start, end + 1):
+        if num > 1:
+            for i in range(2, num):
+                if (num % i) == 0:
+                    composites += 1
+                    break
+            else:
+                primes += 1
+
+    return primes, composites
+
+start_range = 1
+end_range = 20
+prime_count, composite_count = count_primes_composites(start_range, end_range)
+
+print(f"Number of prime numbers: {prime_count}")
+print(f"Number of composite numbers: {composite_count}")
+
+OUTPUT:
+Number of prime numbers: 8
+Number of composite numbers: 11
