@@ -1,0 +1,17 @@
+def is_tech_number(n):
+    s = str(n)
+    length = len(s)
+    
+    if length % 2 != 0:
+        return False   
+    mid = length // 2
+    left = int(s[:mid])
+    right = int(s[mid:])
+    return (left + right) ** 2 == n
+
+num = int(input("Enter a number: "))
+print("Tech number" if is_tech_number(num) else "Not a Tech number")
+
+OUTPUT:
+Enter a number: 3025
+Tech number
