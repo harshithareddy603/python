@@ -1,0 +1,12 @@
+from datetime import datetime, timedelta
+date_input = input("Enter a date (YYYY-MM-DD): ")
+date_obj = datetime.strptime(date_input, "%Y-%m-%d")
+
+next_month = (date_obj.replace(day=1) + timedelta(days=32)).replace(day=1)
+first_monday = next_month + timedelta(days=(7 - next_month.weekday()) % 7)
+print(first_monday.strftime('%Y-%m-%d'))
+
+OUTPUT:
+Enter a date (YYYY-MM-DD): 2024-08-07
+2024-08-07
+2024-09-02
