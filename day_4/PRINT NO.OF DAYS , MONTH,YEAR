@@ -1,0 +1,20 @@
+from datetime import datetime
+date1 = datetime.strptime(input("Enter the first date (YYYY-MM-DD): "), "%Y-%m-%d")
+date2 = datetime.strptime(input("Enter the second date (YYYY-MM-DD): "), "%Y-%m-%d")
+
+days = (date2 - date1).days
+years = (date2.year - date1.year) - ((date2.month, date2.day) < (date1.month, date1.day))
+months = (date2.month - date1.month) % 12
+
+if date2.day < date1.day:
+    months -= 1
+print(f"Days: {days}")
+print(f"Years: {years}")
+print(f"Months: {months}")
+
+OUTPUT:
+Enter the first date (YYYY-MM-DD): 2024-08-07
+Enter the second date (YYYY-MM-DD): 2023-07-06
+Days: -398
+Years: -2
+Months: 10
