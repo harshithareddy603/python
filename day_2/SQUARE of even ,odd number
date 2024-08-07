@@ -1,0 +1,14 @@
+def sum_of_squares_odd_even(numbers):
+    sum_odd = sum(x**2 for x in numbers if x % 2 != 0)
+    sum_even = sum(x**2 for x in numbers if x % 2 == 0)
+    return sum_odd, sum_even
+
+numbers = [1, 2, 3, 4, 5, 6]
+sum_odd, sum_even = sum_of_squares_odd_even(numbers)
+
+print(f"Sum of squares of odd numbers: {sum_odd}")
+print(f"Sum of squares of even numbers: {sum_even}")
+
+OUTPUT:
+Sum of squares of odd numbers: 35
+Sum of squares of even numbers: 56
