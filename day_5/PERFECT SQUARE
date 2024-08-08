@@ -1,0 +1,13 @@
+import math
+def is_perfect_square(num):
+    sqrt_num = math.isqrt(num)
+    return sqrt_num * sqrt_num == num
+    
+number = 25
+if is_perfect_square(number):
+    print(f"{number} is a perfect square.")
+else:
+    print(f"{number} is not a perfect square.")
+
+OUTPUT:
+25 is a perfect square.
