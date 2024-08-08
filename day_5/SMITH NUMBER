@@ -1,0 +1,20 @@
+def sum_of_digits(n):
+    return sum(int(d) for d in str(n))
+
+def is_smith_number(n):
+    if n < 2 or all(n % i != 0 for i in range(2, int(n**0.5) + 1)):
+        return False
+    factors = []
+    temp = n
+    for i in range(2, n):
+        while temp % i == 0:
+            factors.append(i)
+            temp //= i
+    return sum_of_digits(n) == sum(sum_of_digits(f) for f in factors)
+ 
+number = int(input("Enter a number: "))
+print(f"{number} is a Smith number." if is_smith_number(number) else f"{number} is not a Smith number.")
+
+OUTPUT:
+Enter a number: 6
+6 is not a Smith number.
