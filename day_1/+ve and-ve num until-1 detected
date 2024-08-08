@@ -1,30 +1,28 @@
-def process_numbers():
-    pos_sum, neg_sum = 0, 0
-    pos_count, neg_count = 0, 0
-    while (num := int(input("Enter a number (-1 to stop): "))) != -1:
-        if num > 0:
+ def sum_and_average():
+    pos_sum = pos_count = neg_sum = neg_count = 0
+    while True:
+        num = int(input("Enter a number (-1 to stop): "))
+        if num == -1:
+            break
+        elif num > 0:
             pos_sum += num
             pos_count += 1
         elif num < 0:
             neg_sum += num
             neg_count += 1
-    if pos_count:
-        print(f"Positive numbers sum: {pos_sum}, average: {pos_sum / pos_count:.2f}")
-    else:
-        print("No positive numbers entered.")
-    if neg_count:
-        print(f"Negative numbers sum: {neg_sum}, average: {neg_sum / neg_count:.2f}")
-    else:
-        print("No negative numbers entered.")
-process_numbers()
-OUTPUT :Enter a number (-1 to stop): -2
-Enter a number (-1 to stop): 2
-Enter a number (-1 to stop): -3
-Enter a number (-1 to stop): 4
+    pos_avg = pos_sum / pos_count if pos_count else 0
+    neg_avg = neg_sum / neg_count if neg_count else 0
+
+    print(f"Positive numbers: Sum = {pos_sum}, Average = {pos_avg}")
+    print(f"Negative numbers: Sum = {neg_sum}, Average = {neg_avg}")
+
+sum_and_average()
+OUTPUT:
+Enter a number (-1 to stop): 6
 Enter a number (-1 to stop): -4
-Enter a number (-1 to stop): 8
-Enter a number (-1 to stop): -5
-Enter a number (-1 to stop): 9
+Enter a number (-1 to stop): 7
+Enter a number (-1 to stop): -2
+Enter a number (-1 to stop): 5
 Enter a number (-1 to stop): -1
-Positive numbers sum: 23, average: 5.75
-Negative numbers sum: -14, average: -3.50
+Positive numbers: Sum = 18, Average = 6.0
+Negative numbers: Sum = -6, Average = -3.0
