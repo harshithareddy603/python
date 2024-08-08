@@ -1,0 +1,14 @@
+def is_automorphic_number(num):
+    square = num ** 2
+    if str(square).endswith(str(num)):
+        return True
+    return False
+
+number = 25
+if is_automorphic_number(number):
+    print(f"{number} is an Automorphic Number.")
+else:
+    print(f"{number} is not an Automorphic Number.")
+
+OUTPUT:
+25 is an Automorphic Number.
