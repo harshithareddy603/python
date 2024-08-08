@@ -7,6 +7,7 @@ def print_duplicates(arr):
 arr = [1, 2, 2, 3, 4, 4, 4, 5]
 print_duplicates(arr)
 
+
 OUTPUT:
 2: 2 times
 4: 3 times
