@@ -1,0 +1,13 @@
+def pair_sum(lst, target):
+    for i in range(len(lst)):
+        for j in range(i + 1, len(lst)):
+            if lst[i] + lst[j] == target:
+                return (lst[i], lst[j])
+    return None
+ 
+lst = [2, 7, 11, 15]
+target = 9
+print(pair_sum(lst, target)) 
+
+OUTPUT:
+(2, 7)
