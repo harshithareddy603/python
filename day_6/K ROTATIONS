@@ -1,0 +1,11 @@
+def rotate_list(lst, k):
+    n = len(lst)
+    k = k % n  
+    return lst[-k:] + lst[:-k]
+
+my_list = [1, 2, 3, 4, 5]
+k = 3
+rotated_list = rotate_list(my_list, k)
+print(rotated_list) 
+OUTPUT:
+[3, 4, 5, 1, 2]
