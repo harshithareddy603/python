@@ -1,0 +1,15 @@
+def encode_message(message, shift):
+    def shift_char(c):
+        if c.isalpha():
+            start = ord('a') if c.islower() else ord('A')
+            return chr((ord(c) - start + shift) % 26 + start)
+        return c
+    return ''.join(shift_char(c) for c in message)
+
+message = "Hello, World!"
+shift = 3
+encoded = encode_message(message, shift)
+print(encoded) 
+
+OUTPUT:
+Khoor, Zruog
