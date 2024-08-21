@@ -1,0 +1,20 @@
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]]
+n = len(matrix)
+
+row_sums = [sum(row) for row in matrix]
+col_sums = [sum(matrix[i][j] for i in range(n)) for j in range(n)]
+diag_sum1 = sum(matrix[i][i] for i in range(n))  # Main diagonal
+diag_sum2 = sum(matrix[i][n-1-i] for i in range(n))  # Secondary diagonal
+print("Row sums:", row_sums)
+print("Column sums:", col_sums)
+print("Diagonal sum 1:", diag_sum1)
+print("Diagonal sum 2:", diag_sum2)
+
+OUTPUT:
+ Row sums: [6, 15, 24]
+Column sums: [12, 15, 18]
+Diagonal sum 1: 15
+Diagonal sum 2: 15
