@@ -1,0 +1,9 @@
+def sum_of_multiples(below, *multiples):
+    return sum(x for x in range(below) if any(x % m == 0 for m in multiples))
+
+# Example usage
+result = sum_of_multiples(500, 3, 5)
+print(result)
+
+#output
+57918
