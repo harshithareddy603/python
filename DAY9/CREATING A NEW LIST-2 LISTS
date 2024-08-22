@@ -1,0 +1,10 @@
+def merge_lists(list1, list2):
+    return [item for pair in zip(list1, list2) for item in pair]
+
+list1 = [1, 2, 3, 4, 5]
+list2 = [6, 7, 8, 9, 10]
+merged_list = merge_lists(list1, list2)
+print("Merged list:", merged_list)
+
+OUTPUT:
+Merged list: [1, 6, 2, 7, 3, 8, 4, 9, 5, 10]
