@@ -1,0 +1,8 @@
+def modify_string(s):
+    return ''.join(c + '^' if c.lower() in 'aeiou' else c + '@' for c in s)
+
+input_string = input("Enter a string: ")
+print("Modified string:", modify_string(input_string))
+
+OUTPUT:
+      Modified string: h@e^l@l@o^
