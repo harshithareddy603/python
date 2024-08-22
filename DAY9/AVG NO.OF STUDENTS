@@ -1,0 +1,11 @@
+def average_students_present(e, l, t):
+    total_students = sum(e) - sum(l)
+    return total_students / t
+
+e = [10, 20, 30, 40, 50]
+l = [5, 10, 20, 30, 10]
+t = 5
+print("Average number of students present:", average_students_present(e, l, t))
+
+OUTPUT:
+Average number of students present: 15.0
