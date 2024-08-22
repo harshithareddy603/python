@@ -1,0 +1,17 @@
+def justify_text(sentence, width=50):
+    left_aligned = sentence.ljust(width)
+    right_aligned = sentence.rjust(width)
+    return left_aligned, right_aligned
+
+input_sentence = input("Enter a sentence: ")
+left, right = justify_text(input_sentence)
+
+print("Left Aligned:\n", left)
+print("Right Aligned:\n", right)
+
+#output
+Enter a sentence:  sai ram
+Left Aligned:
+ sai ram                                           
+Right Aligned:
+                                            sai ram
