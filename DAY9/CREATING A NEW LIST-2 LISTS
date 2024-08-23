@@ -6,5 +6,12 @@ list2 = [6, 7, 8, 9, 10]
 merged_list = merge_lists(list1, list2)
 print("Merged list:", merged_list)
 
+#WITHOUT USING FUNCTION
+list1 = [1, 6, 8, 4]
+list2 = [2, 7, 3, 9]
+result = [item for i in range(len(list1)) for item in (list1[i], list2[i])]
+print("Merged list:", result)
+
+
 OUTPUT:
 Merged list: [1, 6, 2, 7, 3, 8, 4, 9, 5, 10]
