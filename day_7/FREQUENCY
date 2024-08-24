@@ -4,5 +4,17 @@ fruits = ['apple', 'banana', 'apple', 'orange', 'apple', 'banana']
 frequency = Counter(fruits)
 print(frequency)
 
+or
+ fruits = ['apple', 'banana', 'apple', 'orange', 'apple', 'banana']
+
+frequency = {}
+for fruit in fruits:
+    if fruit in frequency:
+        frequency[fruit] += 1
+    else:
+        frequency[fruit] = 1
+
+print(frequency)
+
 OUTPUT:
 Counter({'apple': 3, 'banana': 2, 'orange': 1})
