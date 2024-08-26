@@ -1,11 +1,9 @@
-number = 12345
-sum_digits = 0
-
-while number > 0:
-    sum_digits += number % 10
-    number //= 10
-
-print("Sum of digits:", sum_digits)
+ sum=0
+n=12345
+while n>0:
+  sum+=n%10
+  n//=10
+print(sum)
 
 OUTPUT:
 Sum of digits: 15
