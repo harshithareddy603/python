@@ -1,17 +1,8 @@
-def merge_lists(list1, list2):
-    return [item for pair in zip(list1, list2) for item in pair]
-
-list1 = [1, 2, 3, 4, 5]
-list2 = [6, 7, 8, 9, 10]
-merged_list = merge_lists(list1, list2)
-print("Merged list:", merged_list)
-
-#WITHOUT USING FUNCTION
-list1 = [1, 6, 8, 4]
-list2 = [2, 7, 3, 9]
-result = [item for i in range(len(list1)) for item in (list1[i], list2[i])]
-print("Merged list:", result)
+list1=[62,51,66,57]
+list2=[113,179,174,123]
+list3=[value for pair in zip(list1, list2) for value in pair]
+print(list3)
 
 
 OUTPUT:
-Merged list: [1, 6, 2, 7, 3, 8, 4, 9, 5, 10]
+Merged list:[62, 113, 51, 179, 66, 174, 57, 123]
