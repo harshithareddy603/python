@@ -1,9 +1,9 @@
-from collections import Counter
-fruits = ['apple', 'banana', 'apple', 'orange', 'apple', 'banana']
+ from collections import Counter
+lst=['apple', 'banana', 'apple', 'orange', 'apple', 'banana']
+freq= Counter(lst)
+print(freq)
 
-frequency = Counter(fruits)
-print(frequency)
-
+output:Counter({'apple': 3, 'banana': 2, 'orange': 1})
 or
  fruits = ['apple', 'banana', 'apple', 'orange', 'apple', 'banana']
 
