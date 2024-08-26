@@ -1,18 +1,11 @@
-import calendar
-
-def weekdays_and_first_monday(year, month):
-    days = range(1, calendar.monthrange(year, month)[1] + 1)
-    weekdays = sum(calendar.weekday(year, month, day) < 5 for day in days)
-    first_monday = next(day for day in days if calendar.weekday(year, month, day) == 0)
-    return weekdays, first_monday
-
-# Example usage
-year = 2024
-month = 3
-weekdays, first_monday = weekdays_and_first_monday(year, month)
-print("Number of weekdays:", weekdays)
-print("Date of the first Monday:", first_monday)
+ import numpy as np
+start='2020-08-01'
+end='2020-09-01'
+week_d=np.busday_count(start,end)
+first_mo=np.busday_offset(start, 0, roll='forward', weekmask='Mon')
+print(first_mo)
+print(week_d)
 
 OUTPUT:
 Number of weekdays: 21
-Date of the first Monday: 4
+Date of the first Monday: 2020-08-03
