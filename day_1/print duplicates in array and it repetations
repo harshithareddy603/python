@@ -1,13 +1,10 @@
- from collections import Counter
-def print_duplicates(arr):
-    counts = Counter(arr)
-    for item, count in counts.items():
-        if count > 1:
-            print(f"{item}: {count} times")
-arr = [1, 2, 2, 3, 4, 4, 4, 5]
-print_duplicates(arr)
-
-
+arr=[1,2,4,5,2,1,7,8]
+counts={}
+for num in arr:
+   counts[num]=counts.get(num,0)+1
+for num,count in counts.items():
+   if count>1:
+      print(f"{num} appears {count} times")
 OUTPUT:
-2: 2 times
-4: 3 times
+2 appears 2 times
+1 appears 2 times
