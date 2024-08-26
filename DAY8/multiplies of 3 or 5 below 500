@@ -1,9 +1,4 @@
-def sum_of_multiples(below, *multiples):
-    return sum(x for x in range(below) if any(x % m == 0 for m in multiples))
-
-# Example usage
-result = sum_of_multiples(500, 3, 5)
-print(result)
-
+total= sum(i for i in range(500) if i%3==0 or i%5==0)
+print(total)
 #output
 57918
