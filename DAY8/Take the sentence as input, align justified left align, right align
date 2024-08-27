@@ -8,6 +8,13 @@ left, right = justify_text(input_sentence)
 
 print("Left Aligned:\n", left)
 print("Right Aligned:\n", right)
+or 
+def justify_text(sentence, width=50):
+     return  sentence.ljust(width),sentence.rjust(width)
+input_sentence = " lahari yegi "
+left, right = justify_text(input_sentence)
+print("Left Aligned:\n", left)
+print("Right Aligned:\n", right)
 
 #output
 Enter a sentence:  sai ram
