@@ -1,14 +1,8 @@
-def sum_of_squares_odd_even(numbers):
-    sum_odd = sum(x**2 for x in numbers if x % 2 != 0)
-    sum_even = sum(x**2 for x in numbers if x % 2 == 0)
-    return sum_odd, sum_even
-
-numbers = [1, 2, 3, 4, 5, 6]
-sum_odd, sum_even = sum_of_squares_odd_even(numbers)
-
-print(f"Sum of squares of odd numbers: {sum_odd}")
-print(f"Sum of squares of even numbers: {sum_even}")
+num=[1,2,3,4,5]
+sum_even=sum(x**2 for x in num if x%2==0)
+sum_odd=sum(x**2 for x in num if x%2!=0)
+print("Even",sum_even,"odd",sum_odd)
 
 OUTPUT:
-Sum of squares of odd numbers: 35
-Sum of squares of even numbers: 56
+Even 20 odd 35
+
