@@ -1,8 +1,15 @@
  s = "welcome to saveetha university"
-print(s.upper(), s.lower(), len([x for x in s.split() if x[0].lower() == 'a']))
+ 
+uppercase_s = s.upper()
+lowercase_s = s.lower()
 
+count_a_words = len([x for x in s.split() if x[0].lower() == 'a'])
+ 
+print(f"Uppercase: {uppercase_s}")
+print(f"Lowercase: {lowercase_s}")
+print(f"Number of words starting with 'a': {count_a_words}")
 OUTPUT:
-Uppercase Sentence: THIS IS A SAMPLE SENTENCE FOR DEMONSTRATION PURPOSES
-Lowercase Sentence: this is a sample sentence for demonstration purposes
-Total Number of Words: 8
-Words Starting with 'a': 1
+ Uppercase: WELCOME TO SAVEETHA UNIVERSITY
+Lowercase: welcome to saveetha university
+Number of words starting with 'a': 0
+
