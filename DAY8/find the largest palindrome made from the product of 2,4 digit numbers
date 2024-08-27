@@ -1,17 +1,11 @@
-def is_palindrome(n):
-    s = str(n)
-    return s == s[::-1]
-
-max_palindrome = 0
-
-for i in range(9999, 999, -1):
-    for j in range(i, 999, -1):
-        product = i * j
-        if is_palindrome(product):
-            if product > max_palindrome:
-                max_palindrome = product
-
-print(max_palindrome)
+num1=9999
+num2=9901
+product=num1*num2
+is_pallindrome=str(product)==str(product)[::-1]
+print(f"{num1}x{num2}={product}")
+print(f"is the product pallindrome! {'yes' if is_pallindrome else 'no'}")
+ 
 
 #output
 99000099
+is a pallindrome
