@@ -1,9 +1,7 @@
- sum=0
-n=12345
-while n>0:
-  sum+=n%10
-  n//=10
-print(sum)
+n = 12345
+sum_of_digits = sum(int(digit) for digit in str(n))
+print(sum_of_digits)
+
 
 OUTPUT:
 Sum of digits: 15
