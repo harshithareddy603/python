@@ -8,8 +8,7 @@ def count_chars():
             upper += 1
         elif char.islower():
             lower += 1
-        elif char.isdigit():Lowercase letters: 2
-Digits: 3
+        elif char.isdigit(): 
             digits += 1
     print(f"Uppercase letters: {upper}")
     print(f"Lowercase letters: {lower}")
